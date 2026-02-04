@@ -1,0 +1,6 @@
+venv/
+mental_health_model/
+__pycache__/
+*.json
+*.jsonl
+*.csv

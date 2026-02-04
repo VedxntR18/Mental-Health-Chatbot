@@ -1,0 +1,91 @@
+2026-02-04 10:14:20,246 [INFO] Starting Data Ingestion...
+2026-02-04 10:14:20,670 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-02-04 10:14:20,680 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/heliosbrahma/mental_health_chatbot_dataset/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08/README.md "HTTP/1.1 200 OK"
+2026-02-04 10:14:20,889 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset/resolve/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08/mental_health_chatbot_dataset.py "HTTP/1.1 404 Not Found"
+2026-02-04 10:14:21,522 [INFO] HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/heliosbrahma/mental_health_chatbot_dataset/heliosbrahma/mental_health_chatbot_dataset.py "HTTP/1.1 404 Not Found"
+2026-02-04 10:14:21,734 [INFO] HTTP Request: GET https://huggingface.co/api/datasets/heliosbrahma/mental_health_chatbot_dataset/revision/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08 "HTTP/1.1 200 OK"
+2026-02-04 10:14:21,948 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset/resolve/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08/.huggingface.yaml "HTTP/1.1 404 Not Found"
+2026-02-04 10:14:22,192 [INFO] HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=heliosbrahma/mental_health_chatbot_dataset "HTTP/1.1 200 OK"
+2026-02-04 10:14:22,413 [INFO] HTTP Request: GET https://huggingface.co/api/datasets/heliosbrahma/mental_health_chatbot_dataset/tree/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-04 10:14:22,627 [INFO] HTTP Request: GET https://huggingface.co/api/datasets/heliosbrahma/mental_health_chatbot_dataset/tree/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08?recursive=false&expand=false "HTTP/1.1 200 OK"
+2026-02-04 10:14:22,849 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset/resolve/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08/dataset_infos.json "HTTP/1.1 404 Not Found"
+2026-02-04 10:14:22,860 [INFO] Merged 17 personal lines with professional data.
+2026-02-04 10:14:23,067 [INFO] HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-04 10:14:23,272 [INFO] HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-02-04 10:14:23,478 [INFO] HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-04 10:14:23,687 [INFO] HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-02-04 10:14:23,901 [INFO] HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-04 10:14:24,036 [INFO] Loading GPT-2 to RTX 4060 GPU...
+2026-02-04 10:14:24,243 [INFO] HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-02-04 10:14:24,456 [INFO] HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-02-04 10:14:24,762 [INFO] HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-02-04 10:30:22,854 [INFO] Starting Data Ingestion...
+2026-02-04 10:30:23,446 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-02-04 10:30:23,453 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/heliosbrahma/mental_health_chatbot_dataset/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08/README.md "HTTP/1.1 200 OK"
+2026-02-04 10:30:23,660 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset/resolve/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08/mental_health_chatbot_dataset.py "HTTP/1.1 404 Not Found"
+2026-02-04 10:30:24,262 [INFO] HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/heliosbrahma/mental_health_chatbot_dataset/heliosbrahma/mental_health_chatbot_dataset.py "HTTP/1.1 404 Not Found"
+2026-02-04 10:30:24,473 [INFO] HTTP Request: GET https://huggingface.co/api/datasets/heliosbrahma/mental_health_chatbot_dataset/revision/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08 "HTTP/1.1 200 OK"
+2026-02-04 10:30:24,686 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset/resolve/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08/.huggingface.yaml "HTTP/1.1 404 Not Found"
+2026-02-04 10:30:24,936 [INFO] HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=heliosbrahma/mental_health_chatbot_dataset "HTTP/1.1 200 OK"
+2026-02-04 10:30:25,177 [INFO] HTTP Request: GET https://huggingface.co/api/datasets/heliosbrahma/mental_health_chatbot_dataset/tree/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-04 10:30:25,393 [INFO] HTTP Request: GET https://huggingface.co/api/datasets/heliosbrahma/mental_health_chatbot_dataset/tree/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08?recursive=false&expand=false "HTTP/1.1 200 OK"
+2026-02-04 10:30:25,613 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset/resolve/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08/dataset_infos.json "HTTP/1.1 404 Not Found"
+2026-02-04 10:30:25,624 [INFO] Merged 17 personal lines with professional data.
+2026-02-04 10:30:25,830 [INFO] HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-04 10:30:26,038 [INFO] HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-02-04 10:30:26,258 [INFO] HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-04 10:30:26,469 [INFO] HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-02-04 10:30:26,693 [INFO] HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-04 10:30:26,820 [INFO] Loading GPT-2 to RTX 4060 GPU...
+2026-02-04 10:30:27,061 [INFO] HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-02-04 10:30:27,291 [INFO] HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-02-04 10:30:27,586 [INFO] HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-02-04 10:30:28,276 [INFO] Starting Hybrid Fine-Tuning...
+2026-02-04 10:32:29,025 [INFO] Starting Data Ingestion...
+2026-02-04 10:32:29,427 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-02-04 10:32:29,435 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/heliosbrahma/mental_health_chatbot_dataset/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08/README.md "HTTP/1.1 200 OK"
+2026-02-04 10:32:29,650 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset/resolve/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08/mental_health_chatbot_dataset.py "HTTP/1.1 404 Not Found"
+2026-02-04 10:32:30,294 [INFO] HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/heliosbrahma/mental_health_chatbot_dataset/heliosbrahma/mental_health_chatbot_dataset.py "HTTP/1.1 404 Not Found"
+2026-02-04 10:32:30,509 [INFO] HTTP Request: GET https://huggingface.co/api/datasets/heliosbrahma/mental_health_chatbot_dataset/revision/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08 "HTTP/1.1 200 OK"
+2026-02-04 10:32:30,720 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset/resolve/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08/.huggingface.yaml "HTTP/1.1 404 Not Found"
+2026-02-04 10:32:30,960 [INFO] HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=heliosbrahma/mental_health_chatbot_dataset "HTTP/1.1 200 OK"
+2026-02-04 10:32:31,186 [INFO] HTTP Request: GET https://huggingface.co/api/datasets/heliosbrahma/mental_health_chatbot_dataset/tree/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-04 10:32:31,393 [INFO] HTTP Request: GET https://huggingface.co/api/datasets/heliosbrahma/mental_health_chatbot_dataset/tree/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08?recursive=false&expand=false "HTTP/1.1 200 OK"
+2026-02-04 10:32:31,609 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset/resolve/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08/dataset_infos.json "HTTP/1.1 404 Not Found"
+2026-02-04 10:32:31,609 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-02-04 10:32:31,619 [INFO] Merged 17 personal lines.
+2026-02-04 10:32:31,838 [INFO] HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-04 10:32:32,045 [INFO] HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-02-04 10:32:32,254 [INFO] HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-04 10:32:32,460 [INFO] HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-02-04 10:32:32,678 [INFO] HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-04 10:32:32,810 [INFO] Loading GPT-2 to RTX 4060...
+2026-02-04 10:32:33,013 [INFO] HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-02-04 10:32:33,225 [INFO] HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-02-04 10:32:33,511 [INFO] HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-02-04 10:32:34,154 [INFO] Starting Hybrid Fine-Tuning...
+2026-02-04 10:32:48,319 [INFO] SUCCESS: Personalized Expert Model Saved to ./mental_health_model
+2026-02-04 10:44:12,095 [INFO] Starting Data Ingestion...
+2026-02-04 10:44:12,510 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-02-04 10:44:12,518 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/heliosbrahma/mental_health_chatbot_dataset/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08/README.md "HTTP/1.1 200 OK"
+2026-02-04 10:44:12,723 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset/resolve/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08/mental_health_chatbot_dataset.py "HTTP/1.1 404 Not Found"
+2026-02-04 10:44:13,320 [INFO] HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/heliosbrahma/mental_health_chatbot_dataset/heliosbrahma/mental_health_chatbot_dataset.py "HTTP/1.1 404 Not Found"
+2026-02-04 10:44:13,528 [INFO] HTTP Request: GET https://huggingface.co/api/datasets/heliosbrahma/mental_health_chatbot_dataset/revision/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08 "HTTP/1.1 200 OK"
+2026-02-04 10:44:13,734 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset/resolve/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08/.huggingface.yaml "HTTP/1.1 404 Not Found"
+2026-02-04 10:44:13,969 [INFO] HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=heliosbrahma/mental_health_chatbot_dataset "HTTP/1.1 200 OK"
+2026-02-04 10:44:14,186 [INFO] HTTP Request: GET https://huggingface.co/api/datasets/heliosbrahma/mental_health_chatbot_dataset/tree/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-04 10:44:14,388 [INFO] HTTP Request: GET https://huggingface.co/api/datasets/heliosbrahma/mental_health_chatbot_dataset/tree/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08?recursive=false&expand=false "HTTP/1.1 200 OK"
+2026-02-04 10:44:14,623 [INFO] HTTP Request: HEAD https://huggingface.co/datasets/heliosbrahma/mental_health_chatbot_dataset/resolve/9d919a54ffc5390bd5522c3bcfbe55f76eca3b08/dataset_infos.json "HTTP/1.1 404 Not Found"
+2026-02-04 10:44:14,636 [INFO] Merged 17 personal lines.
+2026-02-04 10:44:14,839 [INFO] HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-04 10:44:15,043 [INFO] HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-02-04 10:44:15,247 [INFO] HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-04 10:44:15,456 [INFO] HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-02-04 10:44:15,669 [INFO] HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-04 10:44:15,802 [INFO] Loading GPT-2 to RTX 4060...
+2026-02-04 10:44:16,025 [INFO] HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-02-04 10:44:16,240 [INFO] HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-02-04 10:44:16,529 [INFO] HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-02-04 10:44:16,529 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-02-04 10:44:17,116 [INFO] Starting Hybrid Fine-Tuning...
+2026-02-04 10:45:42,685 [INFO] SUCCESS: Personalized Expert Model Saved to ./mental_health_model

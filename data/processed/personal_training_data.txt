@@ -1,0 +1,17 @@
+<s>[USER]: hi i am feeling low and tired [BOT]: Hello there. Tell me how are you feeling today?</s>
+<s>[USER]: low [BOT]: Please go on.</s>
+<s>[USER]: i am doing this work [BOT]: Hello there. Tell me how are you feeling today?</s>
+<s>[USER]: h [BOT]: Please go on.</s>
+<s>[USER]: h [BOT]: Sorry, I didn't understand you.</s>
+<s>[USER]: i am doing this work [BOT]: Hello there. Glad to see you're back. What's going on in your world right now?</s>
+<s>[USER]: and its not working [BOT]: Please go on.</s>
+<s>[USER]: how [BOT]: Sorry, I didn't understand you.</s>
+<s>[USER]: hi vedant this side [BOT]: Hi there. How are you feeling today?</s>
+<s>[USER]: i am feeling okay but slightly off [BOT]: Sorry, I didn't understand you.</s>
+<s>[USER]: well i am doing work on some project but it's too hard [BOT]: Sorry, I didn't understand you.</s>
+<s>[USER]: why cant you understand [BOT]: Please don't hesitate to talk to me.</s>
+<s>[USER]: but i am expressing my self [BOT]: Please go on.</s>
+<s>[USER]: yes so i feel anxious [BOT]: Please don't hesitate to talk to me.</s>
+<s>[USER]: i am tired for building this project [BOT]: Great to see you. How do you feel currently?</s>
+<s>[USER]: sad [BOT]: Please go on.</s>
+<s>[USER]: lonely [BOT]: Sorry, I didn't understand you.</s>
