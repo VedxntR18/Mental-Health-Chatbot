@@ -53,10 +53,10 @@ The repository also contains independent training experiments for expert, founda
 
 | Script | Purpose |
 |---|---|
-| `train_expert.py` | Fine-tunes GPT-2 on a dedicated mental-health chatbot dataset. |
-| `train_foundation.py` | Experiments with general conversational datasets and standardized schemas. |
-| `train_foundation_v2.py` | Larger multi-source experiment combining mental-health, general-chat, and synthetic personalization data. |
-| `train_hybrid.py` | Combines the mental-health dataset with aggregated project conversation data. |
+| `training/train_expert.py` | Fine-tunes GPT-2 on a dedicated mental-health chatbot dataset. |
+| `training/train_foundation.py` | Experiments with general conversational datasets and standardized schemas. |
+| `training/train_foundation_v2.py` | Larger multi-source experiment combining mental-health, general-chat, and synthetic personalization data. |
+| `training/train_hybrid.py` | Combines the mental-health dataset with aggregated project conversation data. |
 
 These scripts represent experimentation and are not necessarily interchangeable. Training configurations, datasets, and objectives differ between runs.
 
@@ -138,10 +138,10 @@ Training scripts are designed around CUDA-enabled GPU execution and were develop
 Examples:
 
 ```bash
-python train_expert.py
-python train_foundation.py
-python train_foundation_v2.py
-python train_hybrid.py
+python training/train_expert.py
+python training/train_foundation.py
+python training/train_foundation_v2.py
+python training/train_hybrid.py
 ```
 
 Training requires the relevant datasets to be available through the Hugging Face `datasets` library and may require substantial GPU memory, storage, and training time.
@@ -191,10 +191,11 @@ Mental-Health-Chatbot/
 │   ├── intents.json
 │   └── processed/
 ├── mental_health_model/
-├── train_expert.py
-├── train_foundation.py
-├── train_foundation_v2.py
-├── train_hybrid.py
+├── training/
+│   ├── train_expert.py
+│   ├── train_foundation.py
+│   ├── train_foundation_v2.py
+│   └── train_hybrid.py
 ├── test_env.py
 ├── test.env2.py
 ├── test_gpu_training.py
