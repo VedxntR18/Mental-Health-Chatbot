@@ -2,7 +2,7 @@ import json
 import os
 
 # Configuration
-LOGS_DIR = "chat_logs"
+LOGS_DIR = os.path.join("evaluation", "chat_logs")
 OUTPUT_FILE = "data/processed/personal_training_data.txt"
 
 # Create output directory if it doesn't exist
