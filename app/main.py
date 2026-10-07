@@ -11,8 +11,8 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 model_path = PROJECT_ROOT / "mental_health_model"
 
 # Create directories for MLOps compliance
-LOGS_DIR = PROJECT_ROOT / "chat_logs"
-CORRECTIONS_DIR = PROJECT_ROOT / "data" / "processed"
+LOGS_DIR = PROJECT_ROOT / "evaluation" / "chat_logs"
+CORRECTIONS_DIR = PROJECT_ROOT / "evaluation"
 LOGS_DIR.mkdir(parents=True, exist_ok=True)
 CORRECTIONS_DIR.mkdir(parents=True, exist_ok=True)
 
