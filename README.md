@@ -64,8 +64,8 @@ These scripts represent experimentation and are not necessarily interchangeable.
 
 The repository contains synthetic project data used for experimentation and testing.
 
-- `chat_logs/` contains constructed conversation sessions used to stress-test model behavior.
-- `data/processed/self_corrections.jsonl` contains synthetic correction/evaluation examples.
+- `evaluation/chat_logs/` contains constructed conversation sessions used to stress-test model behavior.
+- `evaluation/self_corrections.jsonl` contains synthetic correction/evaluation examples.
 - `data/processed/personal_training_data.txt` is generated from conversation logs by `tools/aggregator.py` and can be consumed by the hybrid training experiment.
 - These files are **not real patient records or real user conversations**.
 
@@ -148,9 +148,9 @@ Training requires the relevant datasets to be available through the Hugging Face
 
 ## Experiment Tracking
 
-`training_stats.csv` records selected training loss and learning-rate values from training experiments.
+`experiments/training_stats.csv` records selected training loss and learning-rate values from training experiments.
 
-`training_audit.log` contains a more detailed experiment/training log.
+`experiments/training_audit.log` contains a more detailed experiment/training log.
 
 These artifacts document the development process and are not intended to represent a standardized benchmark.
 
@@ -186,7 +186,7 @@ Mental-Health-Chatbot/
 │   └── ai.py
 ├── tools/
 │   └── aggregator.py
-├── chat_logs/
+├── evaluation/\n│   ├── chat_logs/\n│   └── self_corrections.jsonl
 ├── data/
 │   ├── intents.json
 │   └── processed/
