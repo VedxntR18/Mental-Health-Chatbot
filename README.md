@@ -12,12 +12,13 @@ The repository preserves several training experiments rather than presenting the
 
 ## Key Areas
 
-- **Local conversational model:** GPT-2-based text generation using the fine-tuned model artifacts when available.
+- **Local conversational model:** GPT-2-based text generation using the fine-tuned model artifacts when available, with lightweight intent responses for high-confidence exact matches.
 - **Domain fine-tuning:** Experiments using public mental-health conversational datasets.
 - **Multi-dataset training:** Experiments combining mental-health and general conversational data.
 - **Personalization:** Synthetic correction/evaluation data and aggregated conversation data used in hybrid training experiments.
 - **GPU training:** CUDA/RTX 4060-oriented training configuration with mixed precision and gradient accumulation.
 - **Evaluation experiments:** Synthetic/adversarial conversations designed to expose response-quality and domain-switching failures.
+- **Response refinement:** An exploratory self-correction pass can replace an initial generated response when it produces a usable correction.
 - **Web-assisted experiment:** A separate Gemini + web-search assistant is included as an experimental component.
 
 ## Project Architecture
@@ -47,7 +48,7 @@ Personal Training Data
 Hybrid Fine-Tuning
 ```
 
-The repository also contains independent training experiments for expert, foundation, foundation V2.1, and hybrid fine-tuning.
+The repository also contains independent training experiments for expert, foundation, foundation V2.1, and hybrid fine-tuning. The runtime is intentionally presented as an experimental conversational assistant rather than a therapist or clinical system.
 
 ## Training Experiments
 
@@ -165,6 +166,7 @@ Important limitations include:
 - Mental-health dialogue datasets do not make the resulting model medically qualified.
 - Synthetic evaluation data is useful for stress testing but is not equivalent to real-world clinical evaluation.
 - The current repository does not provide a production-grade safety, moderation, escalation, or clinical-validation layer.
+- Intent matching is deliberately lightweight and only uses exact normalized pattern matches; unmatched queries still use generative inference.
 - The included self-correction experiment should be considered exploratory rather than a validated correction mechanism.
 
 ## Safety Disclaimer
