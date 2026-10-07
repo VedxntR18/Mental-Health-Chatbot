@@ -66,7 +66,7 @@ The repository contains synthetic project data used for experimentation and test
 
 - `chat_logs/` contains constructed conversation sessions used to stress-test model behavior.
 - `data/processed/self_corrections.jsonl` contains synthetic correction/evaluation examples.
-- `data/processed/personal_training_data.txt` is generated from conversation logs by `aggregator.py` and can be consumed by the hybrid training experiment.
+- `data/processed/personal_training_data.txt` is generated from conversation logs by `tools/aggregator.py` and can be consumed by the hybrid training experiment.
 - These files are **not real patient records or real user conversations**.
 
 Some evaluation examples intentionally contain poor or incorrect model outputs. They are retained as failure cases for experimentation and should not be interpreted as verified training targets.
@@ -114,14 +114,14 @@ pip install -r requirements.txt
 The main local chatbot can be started with:
 
 ```bash
-python main.py
+python app/main.py
 ```
 
 If the fine-tuned model weights are unavailable, the current implementation falls back to the base GPT-2 model.
 
 ## Gemini Web Assistant
 
-`ai.py` is a separate experimental web-assisted component using Google's Gemini API and web search.
+`app/ai.py` is a separate experimental web-assisted component using Google's Gemini API and web search.
 
 Configure the API key through an environment variable rather than placing credentials directly in source code:
 
@@ -181,12 +181,14 @@ Mental-Health-Chatbot/
 ├── .gitignore
 ├── README.md
 ├── requirements.txt
-├── aggregator.py
-├── ai.py
-├── main.py
-├── intents.json
+├── app/
+│   ├── main.py
+│   └── ai.py
+├── tools/
+│   └── aggregator.py
 ├── chat_logs/
 ├── data/
+│   ├── intents.json
 │   └── processed/
 ├── mental_health_model/
 ├── train_expert.py
