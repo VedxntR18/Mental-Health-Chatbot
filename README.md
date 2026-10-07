@@ -186,21 +186,25 @@ Mental-Health-Chatbot/
 │   └── ai.py
 ├── tools/
 │   └── aggregator.py
-├── evaluation/\n│   ├── chat_logs/\n│   └── self_corrections.jsonl
+├── evaluation/
+│   ├── chat_logs/
+│   └── self_corrections.jsonl
 ├── data/
 │   ├── intents.json
 │   └── processed/
+│       └── personal_training_data.txt
 ├── mental_health_model/
 ├── training/
 │   ├── train_expert.py
 │   ├── train_foundation.py
 │   ├── train_foundation_v2.py
 │   └── train_hybrid.py
+├── experiments/
+│   ├── training_audit.log
+│   └── training_stats.csv
 ├── test_env.py
 ├── test.env2.py
-├── test_gpu_training.py
-├── training_audit.log
-└── training_stats.csv
+└── test_gpu_training.py
 ```
 
 ## Author
