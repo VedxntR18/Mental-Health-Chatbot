@@ -1,0 +1,47 @@
+[
+    {
+        "timestamp": "2026-02-04 10:08:17",
+        "user": "hi vedant this side",
+        "bot": "Hi there. How are you feeling today?"
+    },
+    {
+        "timestamp": "2026-02-04 10:08:34",
+        "user": "i am feeling okay but slightly off",
+        "bot": "Sorry, I didn't understand you."
+    },
+    {
+        "timestamp": "2026-02-04 10:09:06",
+        "user": "well i am doing work on some project but it's too hard",
+        "bot": "Sorry, I didn't understand you."
+    },
+    {
+        "timestamp": "2026-02-04 10:09:16",
+        "user": "why cant you understand",
+        "bot": "Please don't hesitate to talk to me."
+    },
+    {
+        "timestamp": "2026-02-04 10:09:32",
+        "user": "but i am expressing my self",
+        "bot": "Please go on."
+    },
+    {
+        "timestamp": "2026-02-04 10:09:58",
+        "user": "yes so i feel anxious",
+        "bot": "Please don't hesitate to talk to me."
+    },
+    {
+        "timestamp": "2026-02-04 10:10:20",
+        "user": "i am tired for building this project",
+        "bot": "Great to see you. How do you feel currently?"
+    },
+    {
+        "timestamp": "2026-02-04 10:10:25",
+        "user": "sad",
+        "bot": "Please go on."
+    },
+    {
+        "timestamp": "2026-02-04 10:10:29",
+        "user": "lonely",
+        "bot": "Sorry, I didn't understand you."
+    }
+]

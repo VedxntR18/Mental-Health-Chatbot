@@ -1,6 +1,30 @@
+# Virtual environment
 venv/
-mental_health_model/
+
+# Python cache
 __pycache__/
-*.json
-*.jsonl
-*.csv
+*.py[cod]
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# IDE / editor files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+*.log.bak
+
+# Large trained model artifacts
+mental_health_model/checkpoint-*/
+mental_health_model/model.safetensors
+
+# Training output / TensorBoard
+mental_health_model/runs/
+
+# Keep project data and test logs
+# JSON and CSV files are intentionally NOT globally ignored

@@ -80,22 +80,14 @@ def self_correct_logic(user_input, initial_response):
         # Access the generated text safely
         correction_output = raw_results[0]['generated_text']
         
-        # 3. Extract the text after our trigger phrase
+        # Safer extraction logic
         if "BALANCED_REPLY:" in correction_output:
-            better_answer = correction_output.split("BALANCED_REPLY:")[-1].strip().split("\n")[0]
+            better_answer = correction_output.split("BALANCED_REPLY:")[-1].strip()
         else:
-            # Fallback if the model didn't repeat the tag
-            better_answer = correction_output.strip().split("\n")[0]
-        
-        # --- THE QUALITY GATE ---
-        bad_phrases = ["reach out", "twitter", "facebook", "article has been updated", "appropriate ways"]
-        is_bad = any(phrase in better_answer.lower() for phrase in bad_phrases)
-
-        if len(better_answer) > 10 and not is_bad:
-            with open(correction_file, "a", encoding="utf-8") as f:
-                log_entry = {"text": f"User: {user_input}\nAssistant: {better_answer}"}
-                f.write(json.dumps(log_entry) + "\n")
-            return better_answer
+            better_answer = correction_output.strip()
+            
+        # Remove any lingering prompt artifacts
+        better_answer = better_answer.split("\n")[0].split("USER:")[0].strip()
         
         return initial_response # Return the first thought if the correction is bad
         
@@ -116,12 +108,13 @@ def get_therapist_response(user_text):
 
     raw_output = generator(
         full_prompt, 
-        max_new_tokens=80, 
-        temperature=0.2,       # DROP THIS to 0.2 for strict facts
-        repetition_penalty=1.5, # INCREASE THIS to stop the "you are not alone" talk
+        max_new_tokens=100, 
+        temperature=0.2,       
+        repetition_penalty=1.5, 
         do_sample=True,
         pad_token_id=tokenizer.eos_token_id,
-        return_full_text=False
+        return_full_text=False,
+        clean_up_tokenization_spaces=True # Adds a cleaner look to the text
     )
     initial_msg = raw_output[0]['generated_text'].strip().split("\n")[0]
     

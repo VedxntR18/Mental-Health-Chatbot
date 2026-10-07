@@ -1,0 +1,17 @@
+[
+    {
+        "timestamp": "2026-02-04 12:01:27",
+        "user": "hi",
+        "bot": "I'm processing that. Could you tell me more so I can give you a better answer?"
+    },
+    {
+        "timestamp": "2026-02-04 12:01:35",
+        "user": "what is gpu",
+        "bot": "Please refer to the following section for more information:"
+    },
+    {
+        "timestamp": "2026-02-04 12:01:53",
+        "user": "why sky is blue?, also i am feeling lonely",
+        "bot": "Please refer to the following for more information:"
+    }
+]

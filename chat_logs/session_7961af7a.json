@@ -1,0 +1,42 @@
+[
+    {
+        "timestamp": "2026-02-03 11:28:27",
+        "user": "hi i am feeling low and tired",
+        "bot": "Hello there. Tell me how are you feeling today?"
+    },
+    {
+        "timestamp": "2026-02-03 11:28:34",
+        "user": "low",
+        "bot": "Please go on."
+    },
+    {
+        "timestamp": "2026-02-03 11:28:50",
+        "user": "i am doing this work",
+        "bot": "Hello there. Tell me how are you feeling today?"
+    },
+    {
+        "timestamp": "2026-02-03 11:28:54",
+        "user": "h",
+        "bot": "Please go on."
+    },
+    {
+        "timestamp": "2026-02-03 11:28:56",
+        "user": "h",
+        "bot": "Sorry, I didn't understand you."
+    },
+    {
+        "timestamp": "2026-02-03 11:29:07",
+        "user": "i am doing this work",
+        "bot": "Hello there. Glad to see you're back. What's going on in your world right now?"
+    },
+    {
+        "timestamp": "2026-02-03 11:29:27",
+        "user": "and its not working",
+        "bot": "Please go on."
+    },
+    {
+        "timestamp": "2026-02-03 11:29:32",
+        "user": "how",
+        "bot": "Sorry, I didn't understand you."
+    }
+]
