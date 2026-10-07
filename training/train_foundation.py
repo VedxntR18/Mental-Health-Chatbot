@@ -79,7 +79,7 @@ def load_all_datasets():
     gc3 = load_dataset("fka/awesome-chatgpt-prompts", split="train").select(range(200)).map(map_to_common_format)
 
     # PERSONALIZATION (The 7th Dataset: Your Self-Correction Log)
-    # pers_path = "data/processed/self_corrections.jsonl"
+    # pers_path = "evaluation/self_corrections.jsonl"
     # if os.path.exists(pers_path):
     #     pers_ds = load_dataset("json", data_files=pers_path, split="train").map(map_to_common_format)
     #     # OVERSAMPLING: We multiply your corrections by 30 so the bot listens to YOU most of all
