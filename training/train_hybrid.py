@@ -15,8 +15,8 @@ from transformers import (
 # --- PROJECT PATHS ---
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 MODEL_DIR = PROJECT_ROOT / "mental_health_model"
-AUDIT_LOG = PROJECT_ROOT / "training_audit.log"
-STATS_FILE = PROJECT_ROOT / "training_stats.csv"
+AUDIT_LOG = PROJECT_ROOT / "experiments" / "training_audit.log"
+STATS_FILE = PROJECT_ROOT / "experiments" / "training_stats.csv"
 
 # --- 1. SETUP LOGGING (The Audit Trail) ---
 logging.basicConfig(
@@ -76,8 +76,9 @@ tokenized_ds = final_dataset.map(
 )
 
 # --- 4. TRAINING ARGUMENTS ---
-if not os.path.exists("training_stats.csv"):
-    with open("training_stats.csv", "w") as f:
+if not STATS_FILE.exists():
+    STATS_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(STATS_FILE, "w") as f:
         f.write("step,loss,learning_rate\n")
 
 training_args = TrainingArguments(
