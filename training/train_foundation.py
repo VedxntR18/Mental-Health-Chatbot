@@ -16,10 +16,11 @@ from transformers import (
 # --- PROJECT PATHS ---
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 MODEL_DIR = PROJECT_ROOT / "mental_health_model"
-AUDIT_LOG = PROJECT_ROOT / "training_audit.log"
-STATS_FILE = PROJECT_ROOT / "training_stats.csv"
+AUDIT_LOG = PROJECT_ROOT / "experiments" / "training_audit.log"
+STATS_FILE = PROJECT_ROOT / "experiments" / "training_stats.csv"
 
 # --- 1. SETUP LOGGING (The Audit Trail) ---
+AUDIT_LOG.parent.mkdir(parents=True, exist_ok=True)
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
