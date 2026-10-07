@@ -23,8 +23,7 @@ __pycache__/
 mental_health_model/checkpoint-*/
 mental_health_model/model.safetensors
 
-# Training output / TensorBoard
+# TensorBoard / training run artifacts
 mental_health_model/runs/
 
-# Keep project data and test logs
-# JSON and CSV files are intentionally NOT globally ignored
+# Keep project datasets, evaluation data, and experiment metrics tracked
