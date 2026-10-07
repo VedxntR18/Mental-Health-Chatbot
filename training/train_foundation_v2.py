@@ -40,7 +40,7 @@ def load_v2_data():
     gc3 = load_dataset("fka/awesome-chatgpt-prompts", split="train").select(range(400)).map(map_to_common_format)
 
     # PERSONALIZATION (100x Oversampling)
-    pers_path = PROJECT_ROOT / "data" / "processed" / "self_corrections.jsonl"
+    pers_path = PROJECT_ROOT / "evaluation" / "self_corrections.jsonl"
     if os.path.exists(pers_path):
         pers_ds = load_dataset("json", data_files=pers_path, split="train")
         # FIXED: Added the missing closing parenthesis here
