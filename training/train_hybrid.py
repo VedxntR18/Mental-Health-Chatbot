@@ -19,6 +19,7 @@ AUDIT_LOG = PROJECT_ROOT / "experiments" / "training_audit.log"
 STATS_FILE = PROJECT_ROOT / "experiments" / "training_stats.csv"
 
 # --- 1. SETUP LOGGING (The Audit Trail) ---
+AUDIT_LOG.parent.mkdir(parents=True, exist_ok=True)
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
