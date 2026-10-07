@@ -1,0 +1,9 @@
+# Core ML / NLP
+torch
+transformers
+datasets
+accelerate
+
+# Gemini web-assisted experiment
+google-genai
+ddgs
