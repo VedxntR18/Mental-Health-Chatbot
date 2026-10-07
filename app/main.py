@@ -2,6 +2,8 @@ import torch
 from transformers import pipeline, GPT2Tokenizer, GPT2LMHeadModel
 import json
 import uuid
+import random
+import re
 from pathlib import Path
 from datetime import datetime
 
@@ -87,21 +89,49 @@ def self_correct_logic(user_input, initial_response):
         # Remove any lingering prompt artifacts
         better_answer = better_answer.split("\n")[0].split("USER:")[0].strip()
         
-        return initial_response # Return the first thought if the correction is bad
+        if better_answer and len(better_answer) >= 8:
+            return better_answer
+        return initial_response
         
     except Exception as e:
         print(f"Critique Error: {e}")
         return initial_response
 
-def get_therapist_response(user_text):
+def normalize_text(text):
+    """Normalize text for lightweight intent matching."""
+    return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9\s]", " ", text.lower())).strip()
+
+
+def get_intent_response(user_text):
+    """Return a deterministic response for exact intent examples."""
+    normalized = normalize_text(user_text)
+    if not normalized:
+        return None
+
+    for intent in local_intents.get("intents", []):
+        for pattern in intent.get("patterns", []):
+            pattern_normalized = normalize_text(pattern)
+            if pattern_normalized and normalized == pattern_normalized:
+                responses = intent.get("responses", [])
+                if responses:
+                    return random.choice(responses)
+    return None
+
+
+def get_assistant_response(user_text):
     recent_context = "\n".join([f"User: {c['user']}\nAssistant: {c['bot']}" for c in chat_history[-2:]])
     
-    # We are adding "Answer as a Navi Mumbai local" directly to the injection
+    intent_response = get_intent_response(user_text)
+    if intent_response:
+        return intent_response
+
     full_prompt = (
-        f"You are a local Navi Mumbai guide and AIML engineer at RAIT. "
-        f"Answer this specific question about food or tech first: {user_text}\n"
+        "You are an experimental conversational AI assistant. "
+        "Answer the user's specific question first, clearly and briefly. "
+        "Do not claim to be a therapist, doctor, or mental-health professional. "
+        f"User question: {user_text}\n"
         f"Context: {recent_context}\n"
-        f"Assistant:"
+        "Assistant:"
     )
 
     raw_output = generator(
@@ -123,8 +153,8 @@ def get_therapist_response(user_text):
 
 # --- 5. MAIN CHAT LOOP ---
 if __name__ == "__main__":
-    print(f"System: RTX 4060 Online. Auto-Critique Active.")
-    print("Therapist: Hello. I am here for you. (Type 'quit' to exit)")
+    print(f"System: {'GPU' if device == 0 else 'CPU'} Online. Auto-Critique Active.")
+    print("Assistant: Hello. I am an experimental conversational AI system. (Type 'quit' to exit)")
     
     while True:
         user_msg = input("You: ")
@@ -133,7 +163,7 @@ if __name__ == "__main__":
             break
         
         # Get the smart, self-corrected response
-        bot_msg = get_therapist_response(user_msg)
+        bot_msg = get_assistant_response(user_msg)
         print(f"Bot: {bot_msg}")
         
         # Log the final outcome for memory
